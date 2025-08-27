@@ -3,22 +3,21 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-<nav className="main-nav">
-      <a className="main-nav-logo"><Link to="/LinkIn">
+    <nav className="main-nav">
+      <Link className="main-nav-logo" to="/">
         <img
           className="main-nav-logo-image"
           src={logo}
           alt="Argent Bank Logo"
         />
-        </Link>
-        <h1 className="sr-only"><Link to="/">Argent Bank</Link></h1>
-      </a>
+        <h1 className="sr-only">Argent Bank</h1>
+      </Link>
       <div>
-        <a className="main-nav-item" href="./sign-in.html">
+        <Link className="main-nav-item" to="/SignIn">
           <i className="fa fa-user-circle"></i>
           Sign In
-        </a>
+        </Link>
       </div>
     </nav>
-    )
+  );
 }
