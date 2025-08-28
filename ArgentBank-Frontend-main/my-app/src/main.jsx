@@ -7,10 +7,9 @@ import "./assets/FooterCSS/footer.css";
 export default function App() {
   return (
     <>
-    <Header />
-    <Outlet />
-    <Footer />
+      <Header />
+      <Outlet />
+      <Footer />
     </>
   );
 }
-
