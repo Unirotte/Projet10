@@ -2,19 +2,28 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // Thunk pour le login
-export const login = createAsyncThunk("auth/login", async (credentials, thunkAPI) => {
-  try {
-    const res = await axios.post("http://localhost:3001/api/v1/user/login", credentials);
-    return res.data; // { token: "..." }
-  } catch (err) {
-    return thunkAPI.rejectWithValue(err.response?.data || "Erreur inconnue");
+export const login = createAsyncThunk(
+  "auth/login",
+  async (credentials, thunkAPI) => {
+    try {
+      const res = await axios.post(
+        "http://localhost:3001/api/v1/user/login",
+        credentials
+      );
+      return res.data; // { token: "..." }
+    } catch (err) {
+      // Normaliser l'erreur pour que error.message existe
+      const message = err.response?.data?.message || "Erreur inconnue";
+      return thunkAPI.rejectWithValue({ message });
+    }
   }
-});
+);
+const initialToken = localStorage.getItem("token");
 
 const authSlice = createSlice({
   name: "auth",
   initialState: {
-    token: null,
+    token: initialToken || null,
     loading: false,
     error: null,
   },
@@ -37,7 +46,7 @@ const authSlice = createSlice({
       })
       .addCase(login.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload;
+        state.error = action.payload; // { message: "..." }
       });
   },
 });

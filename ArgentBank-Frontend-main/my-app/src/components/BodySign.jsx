@@ -1,13 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../store/authSlice";
 import Button from "./Button.jsx";
 import { useNavigate } from "react-router-dom";
 
+
 export default function BodySign() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { loading, error, token } = useSelector((state) => state.auth);
+  const {error, token } = useSelector((state) => state.auth);
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -17,10 +18,10 @@ export default function BodySign() {
     dispatch(login({ email: username, password }));
   };
 
-  // Redirection dès que le token est présent
+  // Redirection vers le dashboard si connexion réussie
   useEffect(() => {
     if (token) {
-      navigate("/dashboard"); // <- tu créeras cette page plus tard
+      navigate("/User"); // Page à créer plus tard
     }
   }, [token, navigate]);
 
@@ -47,9 +48,11 @@ export default function BodySign() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <Button type="submit" disabled={loading}>Sign In</Button>
+          <Button text="Sign In" type="submit" >
+            
+          </Button>
         </form>
-        {error && <p style={{ color: "red" }}>{error.message || "Erreur de connexion"}</p>}
+        {error && <p style={{ color: "red" }}>{error.message}</p>}
       </section>
     </main>
   );
