@@ -19,7 +19,6 @@ export default function BodySign() {
 
   // Redirection vers le dashboard si connexion réussie
   useEffect(() => {
-    console.log("Token:", token);
     if (token) {
       navigate("/User"); // Page à créer plus tard
     }

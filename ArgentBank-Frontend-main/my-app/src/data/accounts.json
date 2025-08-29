@@ -1,0 +1,97 @@
+[
+  {
+    "userId": "68ac69cd9112d90440cb1b0d",
+    "accounts": [
+      {
+        "id": "1",
+        "title": "Argent Bank Checking (x3448)",
+        "money": "$48,098.43",
+        "text": "Available Balance",
+        "transactions": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ],
+     "content": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ]
+      },
+      {
+        "id": "2",
+        "title": "Argent Bank Savings (x3448)",
+        "money": "$48,098.43",
+        "text": "Available Balance",
+        "transactions": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00","description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ],
+     "content": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ]
+      },
+      {
+        "id": "3",
+        "title": "Argent Bank Credit Card (x3448)",
+        "money": "$48,098.43",
+        "text": "Current Balance",
+        "transactions": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ],
+     "content": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ]
+      }
+    ]
+  },
+  {
+    "userId": "68ac69cd9112d90440cb1b0e",
+    "accounts": [
+      {
+        "id": "1",
+        "title": "Argent Bank Checking (x8349)",
+        "money": "$2,082.79",
+        "text": "Available Balance",
+        "transactions": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ],
+     "content": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ]
+      },
+      {
+        "id": "2",
+        "title": "Argent Bank Savings (x6712)",
+        "money": "$10,928.42",
+        "text": "Available Balance",
+        "transactions": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ],
+     "content": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ]
+      },
+      {
+        "id": "3",
+        "title": "Argent Bank Credit Card (x8349)",
+        "money": "$184.30",
+        "text": "Current Balance",
+        "transactions": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ],
+    "contents": [
+      { "id": "t1", "date": "2025-08-28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
+      { "id": "t2", "date": "2025-08-29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+    ]
+    
+      }
+    ]
+  }
+]

@@ -42,10 +42,10 @@ export const getUserProfile = createAsyncThunk(
           Authorization: `Bearer ${token}`, // On envoie le token dans le header
         },
       });
-      console.log("User profile response:", response.data);
+      
       return response.data.body; // { id, email, firstName, lastName }
     } catch (error) {
-      console.log("User profile error:", error.response.data);
+      
       return rejectWithValue(error.response.data);
     }
   }
@@ -91,7 +91,6 @@ const authSlice = createSlice({
       state.error = null;
     });
     builder.addCase(getUserProfile.fulfilled, (state, action) => {
-        console.log("Redux user set:", action.payload); 
       state.loading = false;
       state.user = action.payload; // on stocke les infos de l’utilisateur
     });

@@ -7,8 +7,6 @@ import { useEffect } from "react";
 
 export default function Header() {
   const { token, user } = useSelector((state) => state.auth);
-   console.log("Header user:", user);
-  console.log("Header token:", token);
    
   const dispatch = useDispatch();
   const navigate = useNavigate();

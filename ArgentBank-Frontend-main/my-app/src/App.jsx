@@ -7,6 +7,7 @@ import App from "./Main.jsx";
 import HomePage from "./Pages/HomePage.jsx";
 import SignIn from "./Pages/SignIn.jsx";
 import User from "./Pages/user.jsx";
+import AccountsId from "./Pages/AccountsId.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       {path: "/", element: <HomePage />},
       {path: "/SignIn", element: <SignIn />},
       {path: "/User", element: <User />},
+      {path: "/accountsId/:id", element: <AccountsId />},
     ],
   },
 ]);
