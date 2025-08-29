@@ -19,6 +19,14 @@
 .main-nav-item {
   text-decoration: none;
   margin-right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+  gap: 5px;
+  display: flex;
+  
 }
 
 .main-nav-item:hover {
@@ -42,4 +50,10 @@
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.position-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

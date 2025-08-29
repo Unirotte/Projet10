@@ -4,7 +4,6 @@ import { login } from "../store/authSlice";
 import Button from "./Button.jsx";
 import { useNavigate } from "react-router-dom";
 
-
 export default function BodySign() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -20,10 +19,13 @@ export default function BodySign() {
 
   // Redirection vers le dashboard si connexion réussie
   useEffect(() => {
+    console.log("Token:", token);
     if (token) {
       navigate("/User"); // Page à créer plus tard
     }
+    
   }, [token, navigate]);
+  
 
   return (
     <main className="main bg-dark">
@@ -48,8 +50,7 @@ export default function BodySign() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <Button text="Sign In" type="submit" >
-            
+          <Button text="Sign In" className="sign-in-button" type="submit" >
           </Button>
         </form>
         {error && <p style={{ color: "red" }}>{error.message}</p>}
