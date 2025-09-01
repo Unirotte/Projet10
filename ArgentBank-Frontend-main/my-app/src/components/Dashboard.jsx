@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
 import {logout, getUserProfile} from "../store/authSlice";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import {useNavigate} from "react-router-dom";
 import accountsData from "../data/accounts.json";
 import "../assets/DashboardCSS/dashboard.css";
@@ -14,7 +14,7 @@ export default function Dashboard() {
     // Redirige vers la page Transaction en passant l'id dans l'URL
     navigate(`/accountsId/${accountId}`);
   };
-
+  
   const dispatch = useDispatch();
   const {user, token} = useSelector((state) => state.auth);
   const userAccounts = user
@@ -28,20 +28,13 @@ export default function Dashboard() {
   }, [token, user, dispatch]);
 
   if (!token) {
-    console.log("user:", user);
-    console.log("userAccounts:", userAccounts);
+
     return <p>Veuillez vous connecter pour accéder au dashboard.</p>;
   }
+
   return user ? (
     <>
-      <main className="main bg-dark">
         <div className="header">
-          <h1 className="title-name">
-            Welcome back
-            <br />
-            {user.firstName} {user.lastName}!
-          </h1>
-          <Button className="edit-button" text="Edit Name" type="button" />
         </div>
         {userAccounts.map((account) => (
           <section className="account white" key={account.id}>
@@ -63,7 +56,7 @@ export default function Dashboard() {
             </div>
           </section>
         ))}
-      </main>
+    
     </>
   ) : (
     <p>Chargement du profil...</p>

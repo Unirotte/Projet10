@@ -37,10 +37,11 @@ export default function Header() {
         <div className="position-name">
           {token ? (
             <>
-              <span className="main-nav-item">
+            <Link className="main-nav-item" to="/User">
                 <i className="fa fa-user-circle"></i>
                 {user?.userName}
-              </span>
+              </Link>
+
               <button onClick={handleSignOut} className="main-nav-item">
                 <i className="fa fa-user-circle"></i>
                 Sign out
