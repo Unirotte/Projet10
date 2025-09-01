@@ -1,13 +1,13 @@
 import {useState} from "react";
 import "../assets/CollapsCss/collaps.css"
 
-export default function Collaps({text, children, description, date, balance, amount, className = ""}) {
+export default function Collaps({content, text, children, description, date, balance, amount, className = ""}) {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
-  const content = text !== undefined ? text : children;
+  // const content = text !== undefined ? text : children;
 
-  return (
+  return ( 
     <div className={`position-collaps ${isOpen ? "open" : ""} ${className}`}>
       <div className={`collaps ${className}`} onClick={toggle}>
         <h2 className={`collapsTitle`}>{date}</h2>
@@ -19,7 +19,7 @@ export default function Collaps({text, children, description, date, balance, amo
         </span>
       </div>
       <div className={`collapsContent ${isOpen ? "open" : ""}${className}`}>
-        <div className={`collapsText${className}`}></div>
+        <div className={`collapsText${className}`}>{content}</div>
       </div>
     </div>
   );

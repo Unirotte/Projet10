@@ -12,7 +12,7 @@
 }
 
 .collaps {
-  background: #ff6060;
+  background: rgb(103, 164, 103);
   height: 54px;
   display: flex;
   align-items: center;
@@ -79,5 +79,8 @@
   }
 }
 .position-collaps {
+  display: flex;
   margin: auto;
+  margin-top: 15px;
+  flex-direction: column;
 }/*# sourceMappingURL=collaps.css.map */

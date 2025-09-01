@@ -44,7 +44,7 @@ export default function Dashboard() {
           <Button className="edit-button" text="Edit Name" type="button" />
         </div>
         {userAccounts.map((account) => (
-          <section className="account" key={account.id}>
+          <section className="account white" key={account.id}>
             <div className="account-content-wrapper">
               <h3 className="account-title">{account.title}</h3>
               <p className="account-amount">{account.money}</p>
