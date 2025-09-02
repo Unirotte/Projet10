@@ -38,6 +38,20 @@ export default function Transactions() {
       </section>
 
       <div className="position-collaps">
+        <div className="position-all-transaction">
+        <ul className="name-transaction-one">
+          <li className="position-transaction">Date
+          </li>
+          <li className="position-transaction">Description
+          </li>
+          </ul>
+          <ul className="name-transaction">
+          <li className="position-transaction">Amount
+          </li>
+          <li className="position-transaction">Balance
+          </li>
+          </ul>
+          </div>
         {account.transactions?.map((transaction) => (
           <Collaps
             key={transaction.id}
@@ -47,7 +61,8 @@ export default function Transactions() {
             balance={transaction.balance}
             title={account.title}
             description={transaction.description}
-            content={transaction.date} // à remplacer plus tard si nécessaire
+            content={transaction.date}
+            descriptionTransaction={transaction.description} // à remplacer plus tard si nécessaire
           />
         ))}
       </div>

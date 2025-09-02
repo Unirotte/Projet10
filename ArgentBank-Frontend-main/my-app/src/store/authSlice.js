@@ -2,6 +2,23 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+export const updateUserName = createAsyncThunk(
+  "auth/updateUserName",
+  async (newUserName, { getState }) => {
+    const token = getState().auth.token;
+    const res = await fetch("http://localhost:3001/api/v1/user/profile", {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify({ userName: newUserName }),
+    });
+    const data = await res.json();
+    return data.body;
+  }
+);
+
 // Requête de connexion
 // On envoie email + password à l’API pour récupérer un token
 export const login = createAsyncThunk(
@@ -97,6 +114,11 @@ const authSlice = createSlice({
     builder.addCase(getUserProfile.rejected, (state, action) => {
       state.loading = false;
       state.error = action.payload;
+    });
+      builder.addCase(updateUserName.fulfilled, (state, action) => {
+      if (state.user) {
+        state.user.userName = action.payload.userName; // Met à jour seulement le pseudo
+      }
     });
   },
 });

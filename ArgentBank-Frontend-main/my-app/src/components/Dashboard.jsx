@@ -34,8 +34,6 @@ export default function Dashboard() {
 
   return user ? (
     <>
-        <div className="header">
-        </div>
         {userAccounts.map((account) => (
           <section className="account white" key={account.id}>
             <div className="account-content-wrapper">

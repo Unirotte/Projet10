@@ -20,12 +20,26 @@
   border-radius: 5px;
   padding: 0 20px;
   cursor: pointer;
+  list-style-type: none;
+}
+
+.position-title-collaps {
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  white-space: nowrap;
 }
 
 .collapsTitle {
   color: white;
-  font-size: 24px;
-  font-weight: 700;
+}
+
+.test {
+  display: flex;
+  gap: 77%;
+  color: white;
 }
 
 .arrow {
@@ -83,4 +97,27 @@
   margin: auto;
   margin-top: 15px;
   flex-direction: column;
+}
+
+.position-all-transaction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 100px;
+}
+
+.name-transaction {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+.name-transaction-one {
+  display: flex;
+  gap: 150px;
+  list-style-type: none;
+  padding: 0;
 }

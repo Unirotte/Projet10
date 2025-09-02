@@ -17,13 +17,9 @@ body {
   background-color: #12002b;
 }
 
-.bg-white {
-  background-color:white;
-}
-
 .main {
   width: 100%;
-  height: 805px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 100px;
 }/*# sourceMappingURL=index.css.map */

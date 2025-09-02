@@ -8,8 +8,8 @@
         "money": "$48,098.43",
         "text": "Available Balance",
         "transactions": [
-      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
-      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Golden Sun Bakery" },
+      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Golden Sun Bakery" }
     ],
      "contents": [
       { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
@@ -22,8 +22,8 @@
         "money": "$48,098.43",
         "text": "Available Balance",
         "transactions": [
-      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00","description": "Deposit" },
-      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00","description": "Golden Sun Bakery" },
+      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Golden Sun Bakery" }
     ],
      "contents": [
       { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
@@ -36,8 +36,8 @@
         "money": "$48,098.43",
         "text": "Current Balance",
         "transactions": [
-      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
-      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Golden Sun Bakery" },
+      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Golden Sun Bakery" }
     ],
      "contents": [
       { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
@@ -55,8 +55,8 @@
         "money": "$2,082.79",
         "text": "Available Balance",
         "transactions": [
-      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
-      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Golden Sun Bakery" },
+      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Golden Sun Bakery" }
     ],
      "contents": [
       { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
@@ -69,8 +69,8 @@
         "money": "$10,928.42",
         "text": "Available Balance",
         "transactions": [
-      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
-      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Golden Sun Bakery" },
+      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Golden Sun Bakery" }
     ],
      "contents": [
       { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
@@ -83,8 +83,8 @@
         "money": "$184.30",
         "text": "Current Balance",
         "transactions": [
-      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
-      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Withdrawal" }
+      { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Golden Sun Bakery" },
+      { "id": "t2", "date": "2025/08/29", "amount": "$200.00", "balance": "$500.00", "description": "Golden Sun Bakery" }
     ],
     "contents": [
       { "id": "t1", "date": "2025/08/28", "amount": "$500.00", "balance": "$500.00", "description": "Deposit" },
