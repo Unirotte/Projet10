@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  width: 80%;
   margin: 0 auto;
   flex-direction: column;
   padding: 1.5rem;
@@ -13,9 +11,13 @@
 }
 .account.white {
   background-color: white;
+  border: 1px solid black;
+  width: 80%;
 }
 .account.gray {
-  background-color: gray;
+  background-color: rgb(81, 80, 80);
+  width: 71%;
+  border-radius: 5px;
 }
 
 .account-amount {

@@ -1,8 +1,14 @@
 import {useState} from "react";
 import "../assets/CollapsCss/collaps.css";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPen} from "@fortawesome/free-solid-svg-icons";
 export default function Collaps({
-  descriptionTransaction,
+  typeContents1,
+  typeContents2,
+  typeContents3,
+  descriptionContents1,
+  descriptionContents2,
+  descriptionContents3,
   description,
   date,
   balance,
@@ -26,21 +32,31 @@ export default function Collaps({
             <li className="Balance">{amount}</li>
             <li className={`collapsTitle`}>{balance}</li>
           </ul>
-          </div>
-          <span className={`arrow ${isOpen ? "open" : ""}`}>
-            <i className="fa-solid fa-chevron-up"></i>
-          </span>
-        
+        </div>
+        <span className={`arrow ${isOpen ? "open" : ""}`}>
+          <i className="fa-solid fa-chevron-up"></i>
+        </span>
       </div>
       <div className={`collapsContent ${isOpen ? "open" : ""}${className}`}>
-        <tr className={`collapsText${className}`}>
-          <th className="CollapsDescrip">{descriptionTransaction}</th>
-          <td className="CollapsDescrip">{balance}</td>
-        </tr>
-        {/* <tr className={`collapsText${className}`}>
-          <th className="CollapsDescrip">{amount}</th>
-          <td className="CollapsDescrip">{description}</td>
-        </tr> */}
+        <ul className={`collapsText${className}`}>
+          <li className="CollapsDescrip">{typeContents1}</li>
+          <li className="CollapsDescrip">{typeContents2}</li>
+          <li className="CollapsDescrip">{typeContents3}</li>
+        </ul>
+        <ul className={`collapsText${className}`}>
+          <li className="CollapsDescrip">{descriptionContents1}</li>
+          <li className="CollapsDescrip">
+            {descriptionContents2}
+            <span className="pen">
+              <FontAwesomeIcon icon={faPen} />
+            </span>
+          </li>
+          <li className="CollapsDescrip">{descriptionContents3}
+            <span className="pen">
+              <FontAwesomeIcon icon={faPen} />
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
   );

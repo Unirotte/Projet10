@@ -53,28 +53,6 @@ export default function EditName() {
     ) : null;
   }
 
-  // const handleUpdateUserName = async () => {
-  //   try {
-  //     const res = await fetch("/user/profile", {
-  //       method: "PUT",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Authorization: `Bearer ${token}`, // si nécessaire
-  //       },
-  //       body: JSON.stringify({userName: newUserName}),
-  //     });
-  //     const data = await res.json();
-  //     if (res.ok) {
-  //       // Mettre à jour ton state global si tu utilises Redux ou Context
-  //       console.log("Pseudo modifié :", data);
-  //     } else {
-  //       console.error("Erreur :", data);
-  //     }
-  //   } catch (err) {
-  //     console.error(err);
-  //   }
-  // };
-
   return user ? (
     <>
       <div className="header">

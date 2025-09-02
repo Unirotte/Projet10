@@ -1,12 +1,12 @@
 import accountsData from "../data/accounts.json";
-import { useSelector } from "react-redux";
-import { useParams, useNavigate } from "react-router-dom";
+import {useSelector} from "react-redux";
+import {useParams, useNavigate} from "react-router-dom";
 import Collaps from "../components/Collaps.jsx";
 import CloseButton from "../components/CloseButton.jsx";
 
 export default function Transactions() {
-  const { id } = useParams();
-  const { user } = useSelector((state) => state.auth);
+  const {id} = useParams();
+  const {user} = useSelector((state) => state.auth);
   const navigate = useNavigate();
 
   // Récupère les comptes de l'utilisateur
@@ -18,7 +18,9 @@ export default function Transactions() {
   const account = userAccounts.find((acc) => acc.id.toString() === id);
 
   // Prépare contents si besoin (pour futur affichage)
-  const accountContents = account ? (account.contents || account.content || []) : [];
+  const accountContents = account
+    ? account.contents || account.content || []
+    : [];
 
   if (!user || !account) {
     return <p>Compte introuvable</p>;
@@ -39,32 +41,36 @@ export default function Transactions() {
 
       <div className="position-collaps">
         <div className="position-all-transaction">
-        <ul className="name-transaction-one">
-          <li className="position-transaction">Date
-          </li>
-          <li className="position-transaction">Description
-          </li>
+          <ul className="name-transaction-one">
+            <li className="position-transaction">Date</li>
+            <li className="position-transaction">Description</li>
           </ul>
           <ul className="name-transaction">
-          <li className="position-transaction">Amount
-          </li>
-          <li className="position-transaction">Balance
-          </li>
+            <li className="position-transaction">Amount</li>
+            <li className="position-transaction">Balance</li>
           </ul>
-          </div>
-        {account.transactions?.map((transaction) => (
-          <Collaps
-            key={transaction.id}
-            id={transaction.id}
-            date={transaction.date}
-            amount={transaction.amount}
-            balance={transaction.balance}
-            title={account.title}
-            description={transaction.description}
-            content={transaction.date}
-            descriptionTransaction={transaction.description} // à remplacer plus tard si nécessaire
-          />
-        ))}
+        </div>
+        {account.transactions?.map((transaction) => {
+          const content = account.contents.find((c) => c.id === transaction.id);
+
+          return (
+            <Collaps
+              key={transaction.id}
+              id={transaction.id}
+              date={transaction.date}
+              amount={transaction.amount}
+              balance={transaction.balance}
+              title={account.title}
+              description={transaction.description}
+              descriptionContents1={content?.description1}
+              descriptionContents2={content?.description2}
+              descriptionContents3={content?.description3}
+              typeContents1={content?.type1}
+              typeContents2={content?.type2}
+              typeContents3={content?.type3}
+            />
+          );
+        })}
       </div>
     </main>
   );
