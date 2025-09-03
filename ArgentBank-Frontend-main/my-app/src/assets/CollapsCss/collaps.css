@@ -1,27 +1,26 @@
-.collaps-container {
+.position-collaps {
+  width: 80vw;
+  margin-bottom: 30px;
+  max-width: 1022px;
   display: flex;
   flex-direction: column;
-  max-width: 71vw;
   margin: auto;
-  margin-top: 5px;
-}
-
-.position-collaps {
-  width: 71vw;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .collaps {
   background: rgb(103, 164, 103);
-  height: 54px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  padding: 0 20px;
+  padding: 0px 5px;
   cursor: pointer;
   list-style-type: none;
+  max-width: 1022px;
+  font-size: 0.8em;
 }
 
 .position-title-collaps {
@@ -29,8 +28,7 @@
   padding: 0px;
   display: flex;
   align-items: center;
-  gap: 100px;
-  white-space: nowrap;
+  gap: 2vw;
 }
 
 .collapsTitle {
@@ -39,17 +37,21 @@
 
 .test {
   display: flex;
-  gap: 77%;
+  gap: 3vw;
   color: white;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .arrow {
   transition: transform 0.5s ease;
+  padding-left: 5px;
   color: white;
 }
 
 .arrow.open {
   transform: rotate(-180deg);
+  padding-right: 5px;
 }
 
 .collapsContent {
@@ -60,7 +62,7 @@
   padding: 0 20px;
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 0px;
   color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -69,7 +71,10 @@
 .collapsContent.open {
   max-height: 500px;
   transition: max-height 0.3s ease;
-  padding: 10px;
+  padding: 0px;
+  max-width: 1022px;
+  padding: 10px 2px;
+  font-size: 12px;
 }
 
 .collapsText {
@@ -82,25 +87,20 @@
   gap: 10px;
 }
 
-.position-collaps {
-  display: flex;
-  margin: auto;
-  margin-bottom: 15px;
-  flex-direction: column;
-}
-
 .position-all-transaction {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 100px;
+  padding-left: 2vw;
+  padding-right: 4em;
+  gap: 1vw;
+  font-size: 12px;
 }
 
 .name-transaction {
   display: flex;
-  gap: 100px;
+  gap: 3vw;
   align-items: center;
   list-style-type: none;
   padding: 0;
@@ -108,30 +108,13 @@
 
 .name-transaction-one {
   display: flex;
-  gap: 150px;
+  gap: 5em;
   list-style-type: none;
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  .collaps {
-    height: 30px;
-  }
-  .collaps-container {
-    max-width: 84vw;
-  }
-  .position-collaps {
-    width: 84vw;
-    margin-bottom: 15px;
-  }
-  .collapsContent.open {
-    width: 100%;
-    font-size: 12px;
-    padding: 0;
-  }
-  .collapsContent {
-    width: 100%;
-    font-size: 12px;
-    padding: 0;
+@media (min-width: 600px) {
+  .position-title-collaps {
+    padding-right: 2vw;
   }
 }/*# sourceMappingURL=collaps.css.map */
