@@ -95,7 +95,7 @@
   align-items: center;
   justify-content: space-between;
   padding-left: 2vw;
-  padding-right: 4em;
+  padding-right: 2em;
   gap: 1vw;
   font-size: 12px;
 }
@@ -144,8 +144,26 @@ li.CollapsDescrip {
   justify-content: center;
 }
 
+@media (min-width: 1025px) {
+  .collaps {
+    font-size: 1em;
+    padding: 0px 20px;
+  }
+  .position-all-transaction {
+    font-size: 1em;
+    padding-right: 4em;
+    padding-left: 3em;
+  }
+  .name-transaction {
+    gap: 2.5vw;
+  }
+  .collapsContent.open {
+    padding-left: 15px;
+    font-size: 1em;
+  }
+}
 @media (min-width: 600px) {
   .position-title-collaps {
-    padding-right: 2vw;
+    padding-right: 1.5vw;
   }
 }/*# sourceMappingURL=collaps.css.map */
