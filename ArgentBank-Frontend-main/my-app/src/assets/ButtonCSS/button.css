@@ -51,4 +51,12 @@
   padding: 10px;
   cursor: pointer;
   width: 160px;
+}
+
+.pen {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 10px;
 }/*# sourceMappingURL=button.css.map */

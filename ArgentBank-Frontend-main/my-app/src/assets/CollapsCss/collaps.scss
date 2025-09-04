@@ -75,6 +75,8 @@
   max-width: 1022px;
   padding: 10px 2px;
   font-size: 12px;
+  display: flex;
+  align-items: baseline;
 }
 
 .collapsText {
@@ -112,10 +114,37 @@
   padding: 0;
 }
 
-@media (min-width: 600px) {
-
-.position-title-collaps {
-      padding-right: 2vw;
+input.input-collaps {
+  height: 10px;
+  width: 60px;
+  border: none;
+  border-radius: 0px;
 }
 
+li.CollapsDescrip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.editTrans {
+  border: 1px solid #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10px;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  .position-title-collaps {
+    padding-right: 2vw;
+  }
 }

@@ -5,7 +5,7 @@ import "../assets/DashboardCSS/dashboard.css";
 import "../assets/ButtonCSS/button.css";
 import "../assets/EditNameCSS/EditName.css";
 import Button from "../components/Button";
-import {logout, getUserProfile, updateUserName} from "../store/authSlice";
+import {updateUserName} from "../store/authSlice";
 
 export default function EditName() {
   const {user} = useSelector((state) => state.auth);
