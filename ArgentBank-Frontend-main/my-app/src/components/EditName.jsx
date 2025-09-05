@@ -1,9 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import accountsData from "../data/accounts.json";
-import "../assets/DashboardCSS/dashboard.css";
-import "../assets/ButtonCSS/button.css";
-import "../assets/EditNameCSS/EditName.css";
+import "../assets/Compilation/CompilationEdit.css";
 import Button from "../components/Button";
 import {updateUserName} from "../store/authSlice";
 

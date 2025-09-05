@@ -3,7 +3,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {logout, getUserProfile} from "../store/authSlice";
 import {useNavigate, Link} from "react-router-dom";
 import { useEffect } from "react";
-
+import "../assets/HeaderCSS/header.css";
+ 
 
 export default function Header() {
   const { token, user } = useSelector((state) => state.auth);

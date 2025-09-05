@@ -1,7 +1,5 @@
 import "../assets/ExplainCss/explain.css";
-import Chat from "../assets/img/icon-chat.webp";
-import Money from "../assets/img/icon-money.webp";
-import Security from "../assets/img/icon-security.webp";
+import {Chat, Money, Security,} from '../components/Index';
 
 export default function Explain() { 
     return (

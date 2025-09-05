@@ -1,8 +1,8 @@
 import {useState} from "react";
 import "../assets/CollapsCss/collaps.css";
+import "../assets/ButtonCSS/button.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPen} from "@fortawesome/free-solid-svg-icons";
-import "../assets/ButtonCSS/button.css"
 
 export default function Collaps({
   typeContents1,

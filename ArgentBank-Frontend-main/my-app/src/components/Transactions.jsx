@@ -1,8 +1,7 @@
 import accountsData from "../data/accounts.json";
 import {useSelector} from "react-redux";
 import {useParams, useNavigate} from "react-router-dom";
-import Collaps from "../components/Collaps.jsx";
-import CloseButton from "../components/CloseButton.jsx";
+import {Collaps, CloseButton,} from '../components/Index';
 
 export default function Transactions() {
   const {id} = useParams();

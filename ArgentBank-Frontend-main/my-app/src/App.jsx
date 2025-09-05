@@ -4,10 +4,7 @@ import {Provider} from "react-redux";
 import {store} from "./store/store";
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import App from "./Main.jsx";
-import HomePage from "./Pages/HomePage.jsx";
-import SignIn from "./Pages/SignIn.jsx";
-import User from "./Pages/user.jsx";
-import AccountsId from "./Pages/AccountsId.jsx";
+import {HomePage, SignIn, User, AccountsId} from './Pages/IndexPage';
 
 const router = createBrowserRouter([
   {
