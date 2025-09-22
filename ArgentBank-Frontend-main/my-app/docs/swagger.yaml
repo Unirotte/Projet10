@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  title: API Transactions
+  version: 1.0.0
+  description: API pour gérer les transactions d'un compte utilisateur
+
+servers:
+  - url: http://localhost:3000/api
+    description: Serveur local de développement
+
+paths:
+  /accounts/{accountId}/transactions:
+    get:
+      summary: Récupère toutes les transactions d'un compte
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Liste des transactions du compte
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Transaction'
+        '404':
+          description: Compte non trouvé
+
+  /accounts/{accountId}/transactions/{transactionId}:
+    put:
+      summary: Met à jour les descriptions d'une transaction
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                description1:
+                  type: string
+                description2:
+                  type: string
+                description3:
+                  type: string
+      responses:
+        '200':
+          description: Transaction mise à jour avec succès
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaction'
+        '400':
+          description: Données invalides
+        '404':
+          description: Transaction non trouvée
+
+components:
+  schemas:
+    Transaction:
+      type: object
+      properties:
+        id:
+          type: string
+        date:
+          type: string
+          format: date
+        description:
+          type: string
+        amount:
+          type: number
+        balance:
+          type: number
+        description1:
+          type: string
+        description2:
+          type: string
+        description3:
+          type: string
