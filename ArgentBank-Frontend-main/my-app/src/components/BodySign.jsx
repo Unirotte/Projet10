@@ -17,10 +17,9 @@ export default function BodySign() {
     dispatch(login({ email: username, password }));
   };
 
-  // Redirection vers le dashboard si connexion réussie
   useEffect(() => {
     if (token) {
-      navigate("/User"); // Page à créer plus tard
+      navigate("/User"); 
     }
     
   }, [token, navigate]);

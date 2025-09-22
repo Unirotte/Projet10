@@ -16,7 +16,7 @@ export default function Transactions() {
   // Sélectionne le compte correspondant à l'id de la route
   const account = userAccounts.find((acc) => acc.id.toString() === id);
 
-  // Prépare contents si besoin (pour futur affichage)
+  // Prépare contents si besoin 
   const accountContents = account
     ? account.contents || account.content || []
     : [];

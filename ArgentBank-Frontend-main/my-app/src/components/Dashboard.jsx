@@ -1,6 +1,6 @@
 import {useDispatch, useSelector} from "react-redux";
-import {logout, getUserProfile} from "../store/authSlice";
-import {useEffect, useState} from "react";
+import {getUserProfile} from "../store/authSlice";
+import {useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import accountsData from "../data/accounts.json";
 import "../assets/DashboardCSS/dashboard.css";
@@ -47,7 +47,6 @@ export default function Dashboard() {
                 text="View transactions"
                 type="button"
                 onClick={() => {
-                  console.log("clicked!"); // 👈 test
                   handleViewTransactions(account.id);
                 }}
               />

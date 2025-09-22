@@ -21,7 +21,7 @@ export default function Header() {
 
   const handleSignOut = () => {
     dispatch(logout()); // vide token + localStorage
-    navigate("/SignIn"); // redirige vers la home (ou login)
+    navigate("/"); 
   };
 
   return (
