@@ -38,7 +38,7 @@ export default function EditName() {
         <h1 className="title-name">
           Welcome back
           <br />
-          {user.firstName} {user.lastName}!
+          {user.userName}!
         </h1>
 
         <Button

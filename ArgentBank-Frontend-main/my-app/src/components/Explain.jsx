@@ -1,46 +1,17 @@
 import "../assets/ExplainCss/explain.css";
-import {Chat, Money, Security,} from '../components/Index';
+import ExplainBank from "../components/ExplainBank";
 
-export default function Explain() { 
-    return (
-        <>
-        <section className="features">
-            <div className="feature-item">
-            <img
-                src={Chat}
-                alt="Chat Icon"
-                className="feature-icon"
-            />
-            <h3 className="feature-item-title">You are our #1 priority</h3>
-            <p>
-                Need to talk to a representative? You can get in touch through our
-                24/7 chat or through a phone call in less than 5 minutes.
-            </p>
-            </div>
-            <div className="feature-item">
-            <img
-                src={Money}
-                alt="Money Icon"
-                className="feature-icon"
-            />
-            <h3 className="feature-item-title">More savings means higher rates</h3>
-            <p>
-                The more you save with us, the higher your interest rate will be!
-            </p>
-            </div>
-            <div className="feature-item">
-            <img
-                src={Security}
-                alt="Security Icon"
-                className="feature-icon"
-            />
-            <h3 className="feature-item-title">Security you can trust</h3>
-            <p>
-                We use top of the line encryption to make sure your data and money
-                is always safe.
-            </p>
-            </div>
-        </section>
-        </>
-         )
+export default function Explain() {
+  return (
+    <ExplainBank
+      title="You are our #1 priority"
+      title2="More savings means higher rates"
+      title3="Security you can trust"
+      text="Need to talk to a representative? You can get in touch through our
+                24/7 chat or through a phone call in less than 5 minutes."
+      text2="The more you save with us, the higher your interest rate will be!"
+      text3="We use top of the line encryption to make sure your data and money
+                is always safe."
+    />
+  );
 }

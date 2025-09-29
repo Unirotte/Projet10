@@ -11,14 +11,20 @@ servers:
 paths:
   /accounts/{accountId}/transactions:
     get:
-      summary: Récupère toutes les transactions d'un compte
+      summary: Récupère toutes les transactions d'un compte (dernier mois)
       parameters:
         - name: accountId
           in: path
           required: true
           schema:
             type: string
-      responses:
+        - name: lastMonth
+          in: query
+          required: false
+          description: Si true, ne renvoie que les transactions du dernier mois en cours
+          schema:
+            type: boolean
+             responses:
         '200':
           description: Liste des transactions du compte
           content:
@@ -68,7 +74,28 @@ paths:
           description: Données invalides
         '404':
           description: Transaction non trouvée
-
+    delete:
+      summary: Supprime les descriptions personnalisées d'une transaction
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: transactionId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Descriptions supprimée avec succès
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaction'
+        '404':
+          description: Transaction non trouvée
 components:
   schemas:
     Transaction:

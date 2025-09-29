@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   if (!token) {
 
-    return <p>Veuillez vous connecter pour accéder au dashboard.</p>;
+    return <p className="Error">Veuillez vous connecter pour accéder au dashboard.</p>;
   }
 
   return user ? (
@@ -56,6 +56,6 @@ export default function Dashboard() {
     
     </>
   ) : (
-    <p>Chargement du profil...</p>
+    <p className="Error">Chargement du profil...</p>
   );
 }
