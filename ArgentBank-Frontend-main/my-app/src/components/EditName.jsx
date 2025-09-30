@@ -70,7 +70,7 @@ export default function EditName() {
             <input type="text" value={user.firstName} disabled />
           </div>
           <div className="position-champs">
-            <label htmlfor="UserName">Last Name:</label>
+            <label htmlFor="UserName">Last Name:</label>
             <input type="text" value={user.lastName} disabled />
           </div>
         </div>

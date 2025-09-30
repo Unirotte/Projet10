@@ -127,7 +127,9 @@ li.CollapsDescrip {
   align-items: center;
   gap: 5px;
 }
-
+p.Error.black {
+    color: black;
+}
 .editTrans {
   border: 1px solid #00bc77;
   background-color: #00bc77;

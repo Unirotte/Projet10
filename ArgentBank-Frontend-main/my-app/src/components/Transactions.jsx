@@ -22,7 +22,7 @@ export default function Transactions() {
     : [];
 
   if (!user || !account) {
-    return <p>Compte introuvable</p>;
+    return <p className="Error black">Account not found or not connected, please log in or call your own bank</p>;
   }
 
   return (
