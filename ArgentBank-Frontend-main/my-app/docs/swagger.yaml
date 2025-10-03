@@ -24,7 +24,7 @@ paths:
           description: Si true, ne renvoie que les transactions du dernier mois en cours
           schema:
             type: boolean
-             responses:
+      responses:   # <= déplacé ici
         '200':
           description: Liste des transactions du compte
           content:
@@ -96,6 +96,7 @@ paths:
                 $ref: '#/components/schemas/Transaction'
         '404':
           description: Transaction non trouvée
+
 components:
   schemas:
     Transaction:
