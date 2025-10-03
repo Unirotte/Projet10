@@ -12,10 +12,6 @@ export default function EditName() {
   const [isEditing, setIsEditing] = useState(false);
   const [newUserName, setNewUserName] = useState("");
 
-  const userAccounts = user
-    ? accountsData.find((u) => u.userId === user.id)?.accounts || []
-    : [];
-
   useEffect(() => {
     if (user) {
       setNewUserName(user.userName);

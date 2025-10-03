@@ -2,6 +2,55 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+// ========================
+// Async Thunks
+// ========================
+
+// LOGIN
+// Envoie email + password à l’API pour récupérer un token
+export const login = createAsyncThunk(
+  "auth/login",
+  async ({ email, password }, { rejectWithValue }) => {
+    try {
+      const response = await axios.post("http://localhost:3001/api/v1/user/login", {
+        email,
+        password,
+      });
+
+      const token = response.data.body.token;
+
+      // On stocke le token dans le localStorage
+      localStorage.setItem("token", token);
+
+      return token; 
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
+
+// GET USER PROFILE
+// Récupère les informations de l’utilisateur grâce au token
+export const getUserProfile = createAsyncThunk(
+  "auth/getUserProfile",
+  async (_, { getState, rejectWithValue }) => {
+    try {
+      const token = getState().auth.token;
+
+      const response = await axios.get("http://localhost:3001/api/v1/user/profile", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      return response.data.body; // { id, email, firstName, lastName }
+    } catch (error) {
+      return rejectWithValue(error.response.data);
+    }
+  }
+);
+
+// UPDATE USER NAME
 export const updateUserName = createAsyncThunk(
   "auth/updateUserName",
   async (newUserName, { getState }) => {
@@ -19,68 +68,18 @@ export const updateUserName = createAsyncThunk(
   }
 );
 
-// Requête de connexion
-// On envoie email + password à l’API pour récupérer un token
-export const login = createAsyncThunk(
-  "auth/login",
-  async ({ email, password }, { rejectWithValue }) => {
-    try {
-      const response = await axios.post("http://localhost:3001/api/v1/user/login", {
-        email,
-        password,
-      });
-
-      // L’API renvoie : { status, message, body: { token } }
-      const token = response.data.body.token;
-
-      // On stocke le token dans le localStorage pour garder la session
-      localStorage.setItem("token", token);
-
-      return token; // On renvoie le token pour le mettre dans Redux
-    } catch (error) {
-
-      return rejectWithValue(error.response.data);
-    }
-  }
-);
-
-
-// Requête Profil utilisateur
-
-// On récupère les infos de l’utilisateur grâce au token
-export const getUserProfile = createAsyncThunk(
-  "auth/getUserProfile",
-  async (_, { getState, rejectWithValue }) => {
-    try {
-      const token = getState().auth.token; // On récupère le token dans Redux
-
-      const response = await axios.get("http://localhost:3001/api/v1/user/profile", {
-        headers: {
-          Authorization: `Bearer ${token}`, // On envoie le token dans le header
-        },
-      });
-      
-      return response.data.body; // { id, email, firstName, lastName }
-    } catch (error) {
-      
-      return rejectWithValue(error.response.data);
-    }
-  }
-);
-
 // ========================
-// 3️⃣ Slice Auth
+// Auth Slice
 // ========================
 const authSlice = createSlice({
   name: "auth",
   initialState: {
-    token: localStorage.getItem("token") || null, // Vérifie si déjà connecté
+    token: localStorage.getItem("token") || null,
     user: null,
     loading: false,
     error: null,
   },
   reducers: {
-    // Déconnexion → on supprime le token
     logout: (state) => {
       state.token = null;
       state.user = null;
@@ -88,36 +87,38 @@ const authSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    // LOGIN
+    // -------- LOGIN --------
     builder.addCase(login.pending, (state) => {
       state.loading = true;
       state.error = null;
     });
     builder.addCase(login.fulfilled, (state, action) => {
       state.loading = false;
-      state.token = action.payload; // on stocke le token
+      state.token = action.payload;
     });
     builder.addCase(login.rejected, (state, action) => {
       state.loading = false;
-      state.error = action.payload; // message d’erreur
+      state.error = action.payload;
     });
 
-    // GET USER PROFILE
+    // -------- GET USER PROFILE --------
     builder.addCase(getUserProfile.pending, (state) => {
       state.loading = true;
       state.error = null;
     });
     builder.addCase(getUserProfile.fulfilled, (state, action) => {
       state.loading = false;
-      state.user = action.payload; // on stocke les infos de l’utilisateur
+      state.user = action.payload;
     });
     builder.addCase(getUserProfile.rejected, (state, action) => {
       state.loading = false;
       state.error = action.payload;
     });
-      builder.addCase(updateUserName.fulfilled, (state, action) => {
+
+    // -------- UPDATE USER NAME --------
+    builder.addCase(updateUserName.fulfilled, (state, action) => {
       if (state.user) {
-        state.user.userName = action.payload.userName; // Met à jour seulement le pseudo
+        state.user.userName = action.payload.userName;
       }
     });
   },
