@@ -24,7 +24,7 @@ paths:
           description: Si true, ne renvoie que les transactions du dernier mois en cours
           schema:
             type: boolean
-      responses:   # <= déplacé ici
+      responses:   
         '200':
           description: Liste des transactions du compte
           content:
