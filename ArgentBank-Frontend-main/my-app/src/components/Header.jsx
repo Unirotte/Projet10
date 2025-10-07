@@ -44,7 +44,7 @@ export default function Header() {
               </Link>
 
               <button onClick={handleSignOut} className="main-nav-item">
-                <i className="fa fa-user-circle"></i>
+                <i class="fa-solid fa-right-from-bracket"></i>
                 Sign out
               </button>
             </>
