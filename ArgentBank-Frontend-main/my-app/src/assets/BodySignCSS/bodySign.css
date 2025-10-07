@@ -20,14 +20,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.input-remember {
-  display: flex;
-}
-
-.input-remember label {
-  margin-left: 0.25rem;
-}
-
 .input-wrapper {
   display: flex;
   flex-direction: column;
@@ -37,9 +29,14 @@
 
 .input-wrapper label {
   font-weight: bold;
+  color: black;
 }
 
 .input-wrapper input {
   padding: 5px;
   font-size: 1.2rem;
+}
+
+.main.bg-dark.sign-in {
+  height: 700px;
 }/*# sourceMappingURL=bodySign.css.map */

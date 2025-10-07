@@ -1,33 +1,46 @@
-import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { login } from "../store/authSlice";
+import {useState, useEffect} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {login} from "../store/authSlice";
 import Button from "./Button.jsx";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import RememberButton from "./RememberButton";
 
 export default function BodySign() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const {error, token } = useSelector((state) => state.auth);
+  const {error, token} = useSelector((state) => state.auth);
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [remember, setRemember] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(login({ email: username, password }));
+    dispatch(login({email: username, password}));
   };
 
   useEffect(() => {
     if (token) {
-      navigate("/User"); 
+      if (remember) {
+        localStorage.setItem("savedEmail", username);
+      } else {
+        localStorage.removeItem("savedEmail");
+      }
+      navigate("/User");
     }
-    
-  }, [token, navigate]);
-  
+  }, [token, remember, navigate, username]);
+  useEffect(() => {
+    const savedEmail = localStorage.getItem("savedEmail");
+    if (savedEmail) {
+      setUsername(savedEmail);
+      setRemember(true);
+    }
+  }, []);
 
   return (
-    <main className="main bg-dark">
+    <main className="main bg-dark sign-in">
       <section className="sign-in-content">
+        <i className="fa fa-user-circle"></i>
         <h1>Sign In</h1>
         <form onSubmit={handleSubmit}>
           <div className="input-wrapper">
@@ -47,11 +60,15 @@ export default function BodySign() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            <RememberButton checked={remember} setChecked={setRemember} />
           </div>
-          <Button text="Sign In" className="sign-in-button" type="submit" >
-          </Button>
+          <Button
+            text="Sign In"
+            className="sign-in-button"
+            type="submit"
+          ></Button>
         </form>
-        {error && <p style={{ color: "red" }}>{error.message}</p>}
+        {error && <p style={{color: "red"}}>{error.message}</p>}
       </section>
     </main>
   );

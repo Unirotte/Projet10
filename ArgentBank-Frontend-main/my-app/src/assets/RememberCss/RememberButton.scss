@@ -1,0 +1,16 @@
+.input-remember {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+input#remember {
+  margin-right: 10px;
+  accent-color: gray;
+  cursor: pointer;
+}
+
+label.button-radio {
+    font-weight: 100;
+}
