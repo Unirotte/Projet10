@@ -11,7 +11,7 @@ function RememberButton({checked, setChecked}) {
         checked={checked}
         onChange={handleClick}
       />
-      <label htmlFor="remember" className="button-radio">
+      <label htmlFor="remember" className="button-radio" style={{fontWeight: "100"}}>
         Remember me
       </label>
     </div>
