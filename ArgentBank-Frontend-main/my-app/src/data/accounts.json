@@ -1,6 +1,6 @@
 [
   {
-    "userId": "68ac69cd9112d90440cb1b0d",
+    "email": "tony@stark.com",
     "accounts": [
       {
         "id": "1",
@@ -50,45 +50,45 @@
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t2",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t3",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t4",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t5",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           }
         ]
       },
@@ -140,45 +140,45 @@
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t2",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t3",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t4",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t5",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           }
         ]
       },
@@ -230,52 +230,52 @@
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t2",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t3",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t4",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t5",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           }
         ]
       }
     ]
   },
   {
-    "userId": "68ac69cd9112d90440cb1b0e",
+    "email": "steve@rogers.com",
     "accounts": [
       {
         "id": "1",
@@ -325,45 +325,45 @@
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t2",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t3",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t4",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t5",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           }
         ]
       },
@@ -415,45 +415,45 @@
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t2",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t3",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t4",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t5",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           }
         ]
       },
@@ -505,45 +505,45 @@
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t2",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t3",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
           {
             "id": "t4",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           },
            {
             "id": "t5",
             "type1": "Transaction type",
             "type2": "Category",
             "type3": "Note",
-            "description1": "Electronic",
-            "description2": "Food",
-            "description3": "Iorem ipsum"
+            "transaction1": "Electronic",
+            "transaction2": "Food",
+            "transaction3": "Iorem ipsum"
           }
         ]
       }

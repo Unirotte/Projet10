@@ -8,6 +8,7 @@ host: localhost:3001
 basePath: /api/v1
 schemes:
   - http
+
 paths:
   /user/login:
     post:
@@ -33,6 +34,7 @@ paths:
           description: Invalid Fields
         '500':
           description: Internal Server Error
+
   /user/signup:
     post:
       tags:
@@ -57,6 +59,7 @@ paths:
           description: Invalid Fields
         '500':
           description: Internal Server Error
+
   /user/profile:
     get:
       security:
@@ -65,11 +68,11 @@ paths:
         - User Module
       summary: User Profile API
       description: API for fetching a user profile
-      #produces:
-       # - application/json
+      produces:
+        - application/json
       responses:
         '200':
-          description: User profile retrieved successully
+          description: User profile retrieved successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
@@ -94,20 +97,113 @@ paths:
         - application/json
       responses:
         '200':
-          description: User profile retrieved successully
+          description: User profile retrieved successfully
           schema:
             $ref: '#/definitions/ApiResponse'
         '400':
           description: Invalid Fields
         '500':
           description: Internal Server Error
+
+  /accounts/{accountId}/transactions:
+    get:
+      tags:
+        - Accounts Module
+      summary: Get all transactions for an account for the month
+      description: Retrieve all transactions for a given account (optionally filtered by last month)
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          type: string
+          description: The account ID
+        - name: lastMonth
+          in: query
+          required: false
+          type: boolean
+          description: If true, only return transactions from the last month
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: List of account transactions
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Transaction'
+        '404':
+          description: Account not found
+
+  /accounts/{accountId}/transactions/{transactionId}:
+    put:
+      tags:
+        - Accounts Module
+      summary: Add transaction descriptions
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          type: string
+        - name: transactionId
+          in: path
+          required: true
+          type: string
+        - in: body
+          name: body
+          required: true
+          description: Updated transaction descriptions
+          schema:
+            type: object
+            properties:
+              type:
+                type: string
+              category:
+                type: string
+              note:
+                type: string
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Transaction updated successfully
+          schema:
+            $ref: '#/definitions/Transaction'
+        '400':
+          description: Invalid data
+        '404':
+          description: Transaction not found
+    delete:
+      tags:
+        - Accounts Module
+      summary: Delete custom descriptions for a transaction
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          type: string
+        - name: transactionId
+          in: path
+          required: true
+          type: string
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Descriptions deleted successfully
+          schema:
+            $ref: '#/definitions/Transaction'
+        '404':
+          description: Transaction not found
+
 securityDefinitions:
   Bearer:
     type: apiKey
     name: Authorization
     in: header
+
 definitions:
   User:
+    type: object
     properties:
       email:
         type: string
@@ -124,7 +220,9 @@ definitions:
       userName:
         type: string
         description: user public name
+
   Login:
+    type: object
     properties:
       email:
         type: string
@@ -132,6 +230,7 @@ definitions:
       password:
         type: string
         description: user password
+
   ApiResponse:
     type: object
     properties:
@@ -146,13 +245,36 @@ definitions:
             type: string
           email:
             type: string
+
   LoginResponse:
     type: object
     properties:
       token:
         type: string
+
   UserProfile:
     type: object
     properties:
       userName:
+        type: string
+
+  Transaction:
+    type: object
+    properties:
+      id:
+        type: string
+      date:
+        type: string
+        format: date
+      description:
+        type: string
+      amount:
+        type: number
+      balance:
+        type: number
+      type:
+        type: string
+      category:
+        type: string
+      note:
         type: string

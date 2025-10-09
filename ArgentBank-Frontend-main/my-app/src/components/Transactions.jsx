@@ -1,7 +1,7 @@
 import accountsData from "../data/accounts.json";
 import {useSelector} from "react-redux";
 import {useParams, useNavigate} from "react-router-dom";
-import {Collaps, CloseButton,} from '../components/Index';
+import {Collaps, CloseButton} from "../components/Index";
 
 export default function Transactions() {
   const {id} = useParams();
@@ -10,19 +10,23 @@ export default function Transactions() {
 
   // Récupère les comptes de l'utilisateur
   const userAccounts = user
-    ? accountsData.find((u) => u.userId === user.id)?.accounts || []
+    ? accountsData.find((u) => u.email === user.email)?.accounts || []
     : [];
-
+ 
   // Sélectionne le compte correspondant à l'id de la route
   const account = userAccounts.find((acc) => acc.id.toString() === id);
 
-  // Prépare contents si besoin 
+  // Prépare contents si besoin
   const accountContents = account
     ? account.contents || account.content || []
     : [];
 
   if (!user || !account) {
-    return <p className="Error black">Account not found or not connected, please log in or call your own bank</p>;
+    return (
+      <p className="Error black">
+        Account not found or not connected, please log in or call your own bank
+      </p>
+    );
   }
 
   return (
@@ -61,9 +65,9 @@ export default function Transactions() {
               balance={transaction.balance}
               title={account.title}
               description={transaction.description}
-              descriptionContents1={content?.description1}
-              descriptionContents2={content?.description2}
-              descriptionContents3={content?.description3}
+              descriptionContents1={content?.transaction1}
+              descriptionContents2={content?.transaction2}
+              descriptionContents3={content?.transaction3}
               typeContents1={content?.type1}
               typeContents2={content?.type2}
               typeContents3={content?.type3}

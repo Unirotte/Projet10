@@ -19,8 +19,8 @@ export const login = createAsyncThunk(
 
       const token = response.data.body.token;
 
-      // On stocke le token dans le localStorage
-      localStorage.setItem("token", token);
+      // On stocke le token dans le sessionStorage
+      sessionStorage.setItem("token", token);
 
       return token; 
     } catch (error) {
@@ -74,7 +74,7 @@ export const updateUserName = createAsyncThunk(
 const authSlice = createSlice({
   name: "auth",
   initialState: {
-    token: localStorage.getItem("token") || null,
+    token: sessionStorage.getItem("token") || null,
     user: null,
     loading: false,
     error: null,
@@ -83,7 +83,7 @@ const authSlice = createSlice({
     logout: (state) => {
       state.token = null;
       state.user = null;
-      localStorage.removeItem("token");
+      sessionStorage.removeItem("token");
     },
   },
   extraReducers: (builder) => {

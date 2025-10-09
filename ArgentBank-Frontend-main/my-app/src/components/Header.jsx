@@ -20,7 +20,7 @@ export default function Header() {
   }, [token, user, dispatch]);
 
   const handleSignOut = () => {
-    dispatch(logout()); // vide token + localStorage
+    dispatch(logout()); 
     navigate("/"); 
   };
 
