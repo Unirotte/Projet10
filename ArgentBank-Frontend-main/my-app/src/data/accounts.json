@@ -13,82 +13,50 @@
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t2",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t3",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t4",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t5",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
-          }
-        ],
-        "contents": [
-          {
-            "id": "t1",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t2",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t3",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t4",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t5",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           }
         ]
       },
@@ -103,82 +71,50 @@
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t2",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t3",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t4",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t5",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
-          }
-        ],
-        "contents": [
-          {
-            "id": "t1",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t2",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t3",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t4",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t5",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           }
         ]
       },
@@ -193,82 +129,50 @@
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t2",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t3",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t4",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t5",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
-          }
-        ],
-     "contents": [
-          {
-            "id": "t1",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t2",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t3",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t4",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t5",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           }
         ]
       }
@@ -288,82 +192,50 @@
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t2",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t3",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t4",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t5",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
-          }
-        ],
-        "contents": [
-          {
-            "id": "t1",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t2",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t3",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t4",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t5",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           }
         ]
       },
@@ -378,82 +250,50 @@
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t2",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t3",
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t4",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t5",
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
-          }
-        ],
-       "contents": [
-          {
-            "id": "t1",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t2",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t3",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t4",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t5",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           }
         ]
       },
@@ -468,82 +308,50 @@
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t2",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t3",
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t4",
             "date": "2025/08/29",
             "amount": "$200.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           },
           {
             "id": "t5",
             "date": "2025/08/28",
             "amount": "$500.00",
             "balance": "$500.00",
-            "description": "Golden Sun Bakery"
-          }
-        ],
-        "contents": [
-          {
-            "id": "t1",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t2",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t3",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-          {
-            "id": "t4",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
-          },
-           {
-            "id": "t5",
-            "type1": "Transaction type",
-            "type2": "Category",
-            "type3": "Note",
-            "transaction1": "Electronic",
-            "transaction2": "Food",
-            "transaction3": "Iorem ipsum"
+            "description": "Golden Sun Bakery",
+            "type": "string",
+            "category": "string",
+            "note": "string"
           }
         ]
       }

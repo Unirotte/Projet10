@@ -5,13 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faPen} from "@fortawesome/free-solid-svg-icons";
 
 export default function Collaps({
-  typeContents1,
-  typeContents2,
-  typeContents3,
-  description,
-  date,
-  balance,
-  amount,
+  transaction,
   className = "",
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +32,7 @@ export default function Collaps({
     setTempText("");
     setEditingIndex(null);
   };
-
+  const {date, description, amount, balance, type, category, note} = transaction;
   return (
     <div className={`position-collaps ${isOpen ? "open" : ""} ${className}`}>
       <div className={`collaps ${className}`} onClick={toggle}>
@@ -59,13 +53,13 @@ export default function Collaps({
 
       <div className={`collapsContent ${isOpen ? "open" : ""}${className}`}>
         <ul className={`collapsText${className}`}>
-          <li className="CollapsDescrip">{typeContents1}</li>
-          <li className="CollapsDescrip">{typeContents2}</li>
-          <li className="CollapsDescrip">{typeContents3}</li>
+          <li className="CollapsDescrip">Transaction type</li>
+          <li className="CollapsDescrip">Category</li>
+          <li className="CollapsDescrip">Note</li>
         </ul>
 
         <ul className={`collapsText${className}`}>
-          {descriptions.map((desc, index) => (
+          {[type, category, note].map((desc, index) => (
             <li key={index} className="CollapsDescrip">
               {editingIndex === index ? (
                 <>
@@ -79,9 +73,7 @@ export default function Collaps({
                 </>
               ) : (
                 <>
-                  {desc || (
-                    <span> New describ</span>
-                  )}
+                 {desc}
                   <button className="pen" onClick={() => handleEdit(index)}>
                     <FontAwesomeIcon icon={faPen} />
                   </button>

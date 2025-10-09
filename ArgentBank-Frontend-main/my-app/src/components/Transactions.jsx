@@ -54,23 +54,10 @@ export default function Transactions() {
           </ul>
         </div>
         {account.transactions?.map((transaction) => {
-          const content = account.contents.find((c) => c.id === transaction.id);
-
           return (
             <Collaps
               key={transaction.id}
-              id={transaction.id}
-              date={transaction.date}
-              amount={transaction.amount}
-              balance={transaction.balance}
-              title={account.title}
-              description={transaction.description}
-              descriptionContents1={content?.transaction1}
-              descriptionContents2={content?.transaction2}
-              descriptionContents3={content?.transaction3}
-              typeContents1={content?.type1}
-              typeContents2={content?.type2}
-              typeContents3={content?.type3}
+              transaction={transaction}
             />
           );
         })}
