@@ -107,6 +107,8 @@ paths:
 
   /accounts/{accountId}/transactions:
     get:
+      security:
+        - Bearer: []
       tags:
         - Accounts Module
       summary: Get all transactions for an account for the month
@@ -136,6 +138,8 @@ paths:
 
   /accounts/{accountId}/transactions/{transactionId}:
     put:
+      security:
+        - Bearer: []
       tags:
         - Accounts Module
       summary: Add transaction descriptions
@@ -173,6 +177,8 @@ paths:
         '404':
           description: Transaction not found
     delete:
+      security:
+        - Bearer: []
       tags:
         - Accounts Module
       summary: Delete custom descriptions for a transaction
